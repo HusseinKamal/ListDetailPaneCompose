@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-    android:minWidth="40dp"
-    android:minHeight="40dp"
-    android:targetCellWidth="1"
-    android:targetCellHeight="1"
-    android:maxResizeWidth="250dp"
-    android:maxResizeHeight="120dp"
-    android:updatePeriodMillis="86400000"
-    android:description="@string/example_appwidget_description"
     android:initialLayout="@layout/glance_default_loading_layout"
-    android:configure="com.hussein.glance.MainActivity"
+    android:minWidth="160dp"
+    android:minHeight="20dp"
+    android:minResizeWidth="200dp"
+    android:previewImage="@drawable/ic_launcher_background"
     android:resizeMode="horizontal|vertical"
-    android:widgetCategory="home_screen"
-    android:widgetFeatures="reconfigurable|configuration_optional">
-</appwidget-provider>
+    android:updatePeriodMillis="3600000"
+    android:widgetCategory="home_screen" />

@@ -70,4 +70,5 @@ dependencies {
     implementation(libs.androidx.compose.material3.adaptive.navigation)
     // For AppWidgets support
     implementation(libs.glance)
+    implementation(libs.glance.material3)
 }
