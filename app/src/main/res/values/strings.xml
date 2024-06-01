@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Glance</string>
+    <string name="example_appwidget_description">widget demo</string>
 </resources>
