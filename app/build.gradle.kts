@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.screenshot)
 }
 
 android {
@@ -40,13 +41,15 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.4"
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    experimentalProperties["android.experimental.enableScreenshotTest"] = true
+
 }
 
 dependencies {
@@ -71,4 +74,6 @@ dependencies {
     // For AppWidgets support
     implementation(libs.glance)
     implementation(libs.glance.material3)
+    screenshotTestImplementation(libs.androidx.ui.tooling)
+
 }
